@@ -30,7 +30,7 @@ az keyvault create --name $kv -g $rg
 
 ## Create a service principle
 ```bash
-az ad sp create-for-rbac -n "http://az-smi15-keyvault" --sdk-auth
+az ad sp create-for-rbac --skip-assignment -n "http://az-smi15-keyvault" --sdk-auth
 ```
 
 ```json
